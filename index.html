@@ -46,7 +46,6 @@
   .header {
     background: linear-gradient(160deg, #7B4F2E 0%, #C8860A 100%);
     color: white; padding: 28px 20px 20px; text-align: center;
-    position: sticky; top: 0; z-index: 100;
     box-shadow: 0 2px 16px rgba(100,60,10,0.25);
   }
   .header-title { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
@@ -54,7 +53,7 @@
   .header-dates { font-size: 13px; margin-top: 8px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; display: inline-block; }
 
   /* NAV TABS */
-  .tabs { display: flex; background: white; border-bottom: 1px solid var(--border); overflow-x: auto; overflow-y: visible; scrollbar-width: none; position: sticky; top: 105px; z-index: 99; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  .tabs { display: flex; background: white; border-bottom: 1px solid var(--border); overflow-x: auto; overflow-y: visible; scrollbar-width: none; position: sticky; top: 0; z-index: 99; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
   .tabs::-webkit-scrollbar { display: none; }
   .tab { flex: 1 0 auto; padding: 10px 10px; font-size: 11px; font-weight: 500; color: var(--text-muted); border-bottom: 2px solid transparent; white-space: nowrap; cursor: pointer; transition: all 0.2s; -webkit-tap-highlight-color: transparent; user-select: none; text-align:center; }
   .tab.active { color: var(--amber); border-bottom-color: var(--amber); }
