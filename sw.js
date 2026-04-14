@@ -60,7 +60,7 @@ self.addEventListener('fetch', event => {
   }
 
   // 4. 앱 셸 (index.html, manifest) → Cache-First + 백그라운드 갱신
-  if (url.pathname.startsWith('/camino')) {
+  if (url.pathname.startsWith('/via-de-la-plata')) {
     event.respondWith(staleWhileRevalidate(event.request));
     return;
   }
